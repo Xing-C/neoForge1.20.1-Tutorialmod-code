@@ -25,7 +25,7 @@ public class ClientEvents {
         public static void onKeyInput(InputEvent.Key event) {
             if(KeyBinding.DRINKING_KEY.consumeClick()) {
 //                Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
-//                ModMessages.sendToServer(new ExampleC2SPacket());
+                ModMessages.sendToServer(new ExampleC2SPacket());
                 ModMessages.sendToServer(new DrinkWaterC2SPacket());
             }
         }
